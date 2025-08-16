@@ -1,0 +1,254 @@
+.page1{
+ color: black; 
+text-align: center;
+margin-top: 150;
+font-size: 3vw;
+}
+
+
+fieldset {
+background-color: rgb(55, 156, 238);
+ }
+ 
+
+ .my-IMG {
+float: left;
+}
+
+.page2 {
+color: black;
+font-size: 3vw;
+text-align: center;
+}
+
+.page2_con{
+color: black; 
+font-size: 1.7vw ;
+text-align: right;
+
+}
+
+
+.hr{
+    height: 1px;
+background-color: black;
+}
+
+
+.page3{
+    color: black;
+}
+
+.p31{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.p32{
+
+font-size: 1.5vw ;
+text-align: left;
+
+}
+
+.p33{
+    display: flex;
+justify-content: space-between;
+font-size: 1.5vw ;
+text-align: left;
+
+}
+
+.p34{
+color: black; 
+font-size: 1.5vw ;
+text-align: left;
+
+}
+
+.p32_ar{
+font-size: 1.5vw ;
+text-align: right;
+
+}
+
+
+.p33_ar{
+        display: flex;
+justify-content: space-between;
+font-size: 1.5vw ;
+text-align: right;
+}
+
+
+.p34_ar{
+color: black; 
+font-size: 1.5vw ;
+text-align: right;
+
+}
+
+
+table {
+    color: black; 
+    width: calc(100% - 80px); /* عشان تحسب الهوامش */
+    border-collapse: collapse;
+    table-layout: auto; /* أو fixed لو عايز أعمدة ثابتة */
+}
+
+
+.table-container {
+    position: relative;
+    overflow-x: auto; /* سكرول أفقي لو الجدول عريض */
+}
+.p41{
+    text-align: left;
+    font-size: 1.5vw;
+    
+}
+
+
+.p41_ar{
+     color: black; 
+font-size: 1.5vw ;
+text-align: right;
+
+}
+
+
+
+ .page5 {
+            font-family: Arial, sans-serif;
+            
+        }
+.row {
+display: flex;
+flex-wrap: nowrap;
+border: 2px solid black;
+margin-bottom: -2px; 
+}
+
+.cell {
+border-right: 2px solid black;
+padding: 8px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.cell:last-child {
+border-right: 2px;
+}
+
+
+.dual-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dual-text .en {
+    flex: 1;
+    direction: ltr;
+    text-align: left;
+}
+
+.dual-text .ar {
+    flex: 1;
+    direction: rtl;
+    text-align: right;
+}
+
+
+
+.small-box {
+width: 10px;       
+height: 10px;      
+border: 2px solid black; 
+display: inline-block;  
+cursor: pointer;         
+}
+
+
+
+        
+
+        .full-width { width: 100%; }
+
+        .name-col { width: 75%; }
+        .birth-col { width: 25%; }
+
+        .en_id { width: 20%; }
+        .pass_id { width: 60%; }
+        .ar_id { width: 20%; }
+
+        .pob {width: 20%;}
+        .pod_ar{width: 20%;}
+        .ci_en{width: 35%;}
+        .cou_en{width: 25%;}
+
+        .nat_en{width: 20%;}
+        .nat_ar{width: 20%;}
+        .emp{width: 60%;}
+
+        .que_en{width: 20%;}
+        .que_ar{width: 20%;}
+        .an{width: 60%;}
+
+        .AH_en{width: 20%;}
+        .AH_ar{width: 20%;}
+        .coun{width: 15%;}
+        .city{width:15%;}
+        .str{width: 30%;}
+
+
+
+@media (max-width: 600px) {
+    .column {
+             flex-direction: row;
+            }
+    .cell {
+            width: 100% !important;
+            border-right: 2px solid black ;
+            font-size: 1.7vw;
+            border-bottom: none;
+        }
+        .cell:last-child {
+             border-bottom: none;
+
+            }
+        .dual-text {
+                flex-direction:row;
+                align-items: flex-start;
+                gap: 3px;
+
+
+            }
+        .dual-text .ar{
+            text-align: right;
+        }
+        .dual-text .en {
+                text-align: left;
+            }
+        }
+
+
+        @media (max-width: 300px) {
+            
+    .page1,.page2,.page2_con,.page3,.page5,.page4
+    {
+    width: 100%;
+
+    }
+    td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                border: none;
+                margin-bottom: 20px;
+                flex-direction: row;
+                font-size: 1.7vw;
+            }
+
+  
+        }
